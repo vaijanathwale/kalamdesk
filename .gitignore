@@ -1,6 +1,31 @@
+
+# Dependencies
 node_modules/
+**/node_modules/
+
+# Build output
 dist/
+build/
+coverage/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
 __pycache__/
 *.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
 .DS_Store
+Thumbs.db
